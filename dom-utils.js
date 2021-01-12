@@ -30,6 +30,7 @@ export function displayLoseScreen() {
 }
 
 export function resetGamePlayView() {
+    feedbackDisplayDiv.textContent = '☺';
     resultsScreenDiv.classList.toggle('hidden');
     gameWindowSection.classList.toggle('hidden');
 }

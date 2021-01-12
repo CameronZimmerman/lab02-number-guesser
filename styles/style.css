@@ -14,20 +14,22 @@ body {
     --color5: hsla(224, 40%, 79%, 1); */
     
     --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --shadow: 0px 10px 20px -1px rgba(0,0,0,1);
     --gutter: 30px;
     --footer-height: 25px;
-    
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+   
 }
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    height: 100%;
+    background-image: url("../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section {
@@ -43,14 +45,26 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+    text-align: center;
+}
+
+.main-section {
+    background-color: gray;
+    border: 2px dotted black;
+    border-radius: 1%;
+    font-family: 'Anton', sans-serif;
+    max-width: 30%;
+    box-shadow: var(--shadow);
+    position: fixed;
 }
 
 header {
+    position: fixed;
     display: flex;
     justify-content: flex-end;
     background-color: var(--color3);
     height: var(--header-height);
-    box-shadow: var(--shadow);
+    
 }
 
 footer {
@@ -101,4 +115,13 @@ footer {
   
 .hidden {
     display: none;
+}
+
+hr {
+    width: 100%;
+}
+
+#results-screen  {
+    display: grid;
+    font-size: 3em;
 }

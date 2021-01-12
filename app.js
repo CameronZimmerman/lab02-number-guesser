@@ -32,7 +32,6 @@ guessButton.addEventListener('click', () => {
     
         displayStatusMessage(result);
 
-
         if (result === 0){
 
             displayWinScreen();
@@ -43,16 +42,15 @@ guessButton.addEventListener('click', () => {
             canPlay = false;
         }
 
-        showGuesses();
-        
-    }
-    
+        showGuesses();      
+    }    
 });
 
 retryButton.addEventListener('click', () => {
 
     canPlay = true;
     remainingGuesses = 4;
+    randomNumber = generateRandomNumber();
     showGuesses();
     resetGamePlayView();
 
