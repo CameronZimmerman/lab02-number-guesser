@@ -7,17 +7,18 @@ const guessButton = document.getElementById('guess-button');
 // initialize state
 let remainingGuesses = 4;
 let randomNumber = generateRandomNumber();
+let canPlay = true;
 
 // set event listeners to update state and DOM
 
 guessButton.addEventListener('click', () => {
 
-    remainingGuesses = decrementGuesses(remainingGuesses);
-    const currentGuess = Number(guessInput.value);
+    if (canPlay){
 
-    displayStatusMessage(compareNumbers(currentGuess, randomNumber));
-
+        remainingGuesses = decrementGuesses(remainingGuesses);
+        const currentGuess = Number(guessInput.value);
     
-
+        displayStatusMessage(compareNumbers(currentGuess, randomNumber));
+    }
     
 });

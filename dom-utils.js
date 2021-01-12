@@ -1,5 +1,9 @@
 const feedbackDisplayDiv = document.getElementById('feedback-display');
 
+const resultsScreenDiv = document.getElementById('results-screen');
+const resultsMessageHeader = document.getElementById('results-message');
+const gameWindowSection = document.getElementById('')
+
 export function decrementGuesses(curGuesses){
     return curGuesses - 1;
 }
@@ -12,11 +16,10 @@ export function displayStatusMessage(status) {
 
 }
 
-export function disableGamePlay() {
-
-}
-
 export function displayWinScreen() {
+
+    resultsScreenDiv.classList.toggle('hidden');
+    resultsScreenDiv.classList.toggle('hidden');
 
 }
 
