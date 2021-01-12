@@ -33,7 +33,6 @@ main {
 }
 
 section {
-    background-color: var(--color5);
     width: 1000px;
     max-width: 80%;
     display: flex;
@@ -80,20 +79,6 @@ h2 {
     font-weight: bold;
 }
 
-.gutter-right {
-    margin-right: 20px;
-}
-
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
-}
-
-header img {
-    height: var(--header-height);
-}
-
-
-
 content {
     width: 80%;
 }
@@ -123,5 +108,11 @@ hr {
 
 #results-screen  {
     display: grid;
+    font-family: 'Bebas Neue', cursive;
     font-size: 3em;
+}
+
+button {
+    background-image: url("../assets/bg.jpg");
+    font-family:'Anton', sans-serif;
 }
