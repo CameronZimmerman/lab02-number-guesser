@@ -4,9 +4,6 @@ const resultsScreenDiv = document.getElementById('results-screen');
 const resultsMessageHeader = document.getElementById('results-message');
 const gameWindowSection = document.getElementById('game-window');
 
-export function decrementGuesses(curGuesses){
-    return curGuesses - 1;
-}
 
 export function displayStatusMessage(status) {
 

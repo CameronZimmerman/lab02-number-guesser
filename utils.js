@@ -9,3 +9,7 @@ export function compareNumbers(guess, correctNumber) {
 export function generateRandomNumber() {
     return Math.ceil(Math.random() * 20);
 }
+
+export function decrementGuesses(curGuesses){
+    return curGuesses - 1;
+}
