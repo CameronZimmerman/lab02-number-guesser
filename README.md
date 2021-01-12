@@ -24,7 +24,7 @@
         - verify: TDD
     - display message based on answer
         - Function displayMessage(compareNumbers(x,y));
-        - verify: TDD
+        - verify: message will change accordingly
     - repeat until win or lose
 
     -win or lose - show screen with retry button with different design based on win/lose
