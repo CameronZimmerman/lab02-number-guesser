@@ -1,4 +1,4 @@
-import {displayLoseScreen, displayStatusMessage, displayWinScreen, resetGamePlayView } from './dom-utils.js';
+import { displayLoseScreen, displayStatusMessage, displayWinScreen, resetGamePlayView } from './dom-utils.js';
 import { compareNumbers, generateRandomNumber, decrementGuesses } from './utils.js';
 
 // import functions and grab DOM elements
