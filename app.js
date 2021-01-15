@@ -32,15 +32,7 @@ guessButton.addEventListener('click', () => {
     
         displayStatusMessage(result);
 
-        if (result === 0){
-
-            displayWinScreen();
-            canPlay = false;
-        } 
-        else if (remainingGuesses === 0){
-            displayLoseScreen();
-            canPlay = false;
-        }
+        displayResultsScreen(result);
 
         showGuesses();      
     }    
@@ -55,3 +47,14 @@ retryButton.addEventListener('click', () => {
     resetGamePlayView();
 
 });
+
+function displayResultsScreen(result) {
+    if (result === 0){
+        displayWinScreen();
+        canPlay = false;
+    } 
+    else if (remainingGuesses === 0){
+        displayLoseScreen();
+        canPlay = false;
+    }
+}
